@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* imprima-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/imprima-v16-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/imprima-v16-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.svg#Imprima') format('svg'); /* Legacy iOS */
+}
+body{
+    font-family: 'Imprima';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+.wrapper-full{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.intro{
+    height: 100vh;
+    background: url(../img/intro-bg7.jpg) no-repeat center;
+    background-size: cover;
+}
+.pictures{
+    margin-bottom: 100px;
+
+}
+.pictures_picture{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 108px;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.picture_title{
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 50px;
+   
+
+
+
+}
+
+    
+    
+
+.picture_desc{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+    
+    
+
+.text_more{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/Arrow\ 1.png) no-repeat right;
+
+}
+.text_more:hover, .text_more:focus{
+    opacity: .65;
+}
+.pic_first{
+    width: 308px;
+    height: 300px;
+    border-radius: 150px;
+    margin-top: 10px;
+    
+}
+.pic_second{
+    width: 308px;
+    height: 300px;
+   
+}

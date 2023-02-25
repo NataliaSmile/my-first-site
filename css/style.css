@@ -1,0 +1,268 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html {
+    height: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+/* imprima-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Imprima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/imprima-v16-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/imprima-v16-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/imprima-v16-latin_latin-ext-regular.svg#Imprima') format('svg'); /* Legacy iOS */
+}
+  
+body{
+    font-family: 'Imprima';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+/*Header styles start*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_active{
+    background: purple;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.header_item{
+    margin-right: 71px;
+    
+}
+.header_item:last-child{
+    margin-right: 0;
+}
+.header_link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.header_link:hover, .header_link:focus, .header_link:active{
+    opacity: .75;
+} 
+.header_logo-link{
+    font-size: 2px;
+    
+}
+.header_burger{
+    display: none;
+    width: 40px;
+    height: 28px;
+    position: relative;
+
+}
+.burger_line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+
+}
+.burger_line_first{
+    top: 0;
+
+}
+.burger_line_second{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.burger_line_third{
+    bottom: 0;
+}
+
+/*Header styles end*/
+
+/*intro styles start*/
+.intro{
+    min-height: 100vh;
+    background: url(../img/intro-bg4.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 263px;
+}
+.intro_title{
+    font-weight: 400px;
+    font-size: 80px;
+    line-height: 193px;
+    color: white;
+    margin-bottom: 5px;
+}
+.intro_subtitle{
+    color: white;
+    max-width: 400px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.search-form_submit{
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    color:palevioletred;
+    background: linear-gradient #FFFFFF;
+    border: 10px solid #45D8D8;
+    border-radius: 120px;;
+    
+}
+.search-form_submit:hover, .search-form_submit:focus, .search-form_submit:active{
+    background: purple;
+
+} 
+
+/*intro styles end*/
+/*media start*/
+@media screen and (max-width: 767px) {
+    .header_burger {
+        display: block;
+
+    }
+    .header_nav{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: purple;
+        z-index: 10;
+        padding: 75px;
+        transform: translateX(100%);
+        transition: .2s all linear;
+
+
+    }
+    .header_nav_active{
+        transform: translateX(0);
+
+
+    }
+    .header_item{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+
+
+    }
+    .header_item :last-child{
+        margin-bottom: 0;
+    }
+    .header_link{
+        font-size: 42px;
+        line-height: 48px;
+    }
+    .header_nav-close{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 150px;
+        z-index: 11;
+
+    }
+    .header_nav-close-line{
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        
+    }
+    .header_nav-close-line:first-child{
+        transform: translateY(-45%) rotate(50deg);
+
+        
+    }
+    .header_nav-close-line:first-child{
+        transform: translateY(-45%) rotate(-50deg);
+    }
+
+    
+    
+
+
+
+} 
+    
+
+/*media end*/
